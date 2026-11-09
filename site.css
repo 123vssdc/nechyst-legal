@@ -1,0 +1,35 @@
+/* Нечисть: сторінки підтримки й приватності. Ті самі шрифти й кольори, що в застосунку; жодних зовнішніх ресурсів. */
+@font-face{font-family:Hand;font-weight:400;src:url(fonts/shantell-sans-cyrillic-400-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap}
+@font-face{font-family:Hand;font-weight:400;src:url(fonts/shantell-sans-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+2212;font-display:swap}
+@font-face{font-family:Hand;font-weight:700;src:url(fonts/shantell-sans-cyrillic-700-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap}
+@font-face{font-family:Hand;font-weight:700;src:url(fonts/shantell-sans-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+2212;font-display:swap}
+@font-face{font-family:Loud;font-weight:900;src:url(fonts/sofia-sans-extra-condensed-cyrillic-900-normal.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap}
+@font-face{font-family:Loud;font-weight:900;src:url(fonts/sofia-sans-extra-condensed-latin-900-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+2212;font-display:swap}
+
+:root{--paper:#FFF3C4;--ink:#1B1033;--pink:#FF5A8A;--violet:#7A2EE0;--card:#FFF8E8}
+*{box-sizing:border-box;margin:0}
+html{background:var(--paper);-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.55 Hand,system-ui,sans-serif;max-width:760px;margin:0 auto;padding:0 16px 40px}
+a{color:var(--ink);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--violet)}
+
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0;border-bottom:4px solid var(--ink)}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font:900 30px/1 Loud,sans-serif;text-transform:uppercase}
+.mark img{border-radius:11px;border:3px solid var(--ink)}
+.top nav{display:flex;gap:8px;flex-wrap:wrap}
+.top nav a{font-weight:700;font-size:14px;text-decoration:none;border:2.5px solid var(--ink);border-radius:999px;padding:3px 12px;background:var(--card)}
+
+article{padding-top:44px}
+.kick{display:flex;align-items:center;gap:10px;font-weight:700;font-size:15px}
+.kick i{font:900 15px/1 Loud,sans-serif;font-style:normal;border:2.5px solid var(--ink);border-radius:9px;padding:3px 7px 2px}
+h1{font:900 clamp(64px,17vw,124px)/.86 Loud,sans-serif;text-transform:uppercase;margin:16px 0 22px;letter-spacing:-.005em}
+.lede{font-size:19px;font-weight:700;max-width:34em;margin-bottom:12px}
+h2{font:900 28px/1 Loud,sans-serif;text-transform:uppercase;margin:34px 0 8px;padding-top:12px;border-top:2px dashed rgba(27,16,51,.35)}
+p+p{margin-top:10px}
+.contact{margin:26px 0 6px;padding:16px 18px;background:var(--card);border:4px solid var(--ink);border-radius:18px 22px 16px 24px;font-weight:700;font-size:18px;box-shadow:5px 6px 0 var(--ink)}
+.contact small{font-weight:400;font-size:14px}
+.todo{background:var(--pink);color:var(--ink);padding:0 6px;border-radius:6px;font-weight:700}
+.links{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:34px;font-weight:700}
+.cut{border:0;border-top:4px dashed var(--ink);margin:64px 0 0}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:56px;padding-top:14px;border-top:4px solid var(--ink);font-size:14px}
+@media (max-width:420px){body{font-size:16px}.lede{font-size:17px}.mark{font-size:26px}}
